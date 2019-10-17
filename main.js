@@ -63,3 +63,11 @@ function showIcon(icon) {
 }
 
 // Add function for  Delete location box
+function deleteLocation(e) {
+  if (e.target.className == "delete") {
+    document.querySelector(".message").remove();
+    document.querySelector(".zip").value = "";
+    document.querySelector(".icon-check").remove();
+  }
+}
+
